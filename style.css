@@ -1,0 +1,257 @@
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #128f55;
+    padding: 7px 150px;
+    color: #fff;
+}
+
+.contact-info {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-info span {
+    color: #fff;
+}
+
+.language-selector {
+    display: flex;
+    gap: 10px;
+}
+
+.language-button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #555;
+    color: #fff;
+}
+
+.language-button.active {
+    background-color: #007bff;
+}
+.navbar {
+    background-color: #333;
+    padding: 0; /* Top margin removed */
+    height: 70px; /* Adjust height of navbar */
+    display: flex;
+    align-items: center; /* Vertically center content */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.image img {
+    width: 50px; /* Adjust size of the logo image */
+    height: auto;
+    margin-left: 20px; /* Adjust the left margin for the image */
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+ul a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li {
+    padding: 10px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+ul li:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Center the menu items horizontally */
+ul {
+    margin-right: auto;
+    margin-left: auto;
+}
+.banner {
+    width: 100%;
+    height: 400px; /* Height of the banner */
+    background-image: url('./images/banner.jpg'); /* Path to your banner image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+/* Dark overlay for text readability */
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity of overlay */
+    z-index: 1;
+}
+
+/* Text content inside the banner */
+.banner-content {
+    z-index: 2; /* Make sure content is above overlay */
+}
+
+.banner h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.banner p {
+    font-size: 24px;
+    margin-top: 10px;
+}
+.discover h1{
+    text-align: center;
+    color: #141414;
+    text-decoration: underline;
+    margin-top: 20px;
+    font-size: larger;
+}
+.food-icon {
+    font-size: 50px;
+    color: #ff9800;
+}
+
+.cart-item {
+    margin-bottom: 20px;
+}
+
+.btn-custom {
+    background-color: #ff9800;
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: #e68900;
+    color: white;
+}
+
+.food-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.food-price {
+    color: #28a745;
+}
+
+/* Change background of the entire cart (card) on hover */
+.card:hover {
+    background-color: #128f55; /* This color will appear when hovering over the cart */
+    color: white; /* Change text color to white for better contrast */
+}
+
+.card:hover .btn-custom {
+    background-color: white; /* Optional: Change button background color on hover */
+    color: #128f55; /* Optional: Button text color change */
+}
+
+.counter-section {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+.counter-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.counter-item:hover {
+    transform: translateY(-10px);
+    background-color: #128f55; /* Change background color on hover */
+    color: white; /* Change text color on hover for better contrast */
+}
+
+.counter-item:hover .counter {
+    color: white; /* Change counter color to white on hover */
+}
+
+.counter-item h3 {
+    font-size: 40px;
+    margin: 0;
+    color: #128f55; /* Default counter color */
+}
+
+.counter-item p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #555;
+}
+.footer {
+    background-color: #128f55; /* Set the background color */
+    color: #fff; /* Set the text color to white for contrast */
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #0f6f4b; /* Optional: slightly darker border for contrast */
+}
+
+.footer .footer-icon {
+    font-size: 24px;
+    color: #fff; /* Icon color to match the text */
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin: 0;
+    color: #fff; /* Ensure text is white */
+}
+
+.footer a {
+    color: #d4f4e0; /* Light color for the email link */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.about-section {
+    padding: 50px 0;
+}
+
+.about-section h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #128f55; /* Your theme color */
+}
+
+.about-section p {
+    font-size: 1.125rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.about-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}

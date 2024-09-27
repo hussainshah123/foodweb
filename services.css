@@ -1,0 +1,179 @@
+/* Event Planner Section */
+.event-planner-section {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+.event-planner-section h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #128f55; /* Your theme color */
+    text-align: center;
+}
+
+.box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.box i {
+    font-size: 2rem;
+    color: #128f55; /* Icon color */
+    margin-bottom: 15px;
+}
+
+.box h3 {
+    font-size: 1.75rem;
+    color: #128f55; /* Your theme color */
+    margin-bottom: 15px;
+}
+
+.box p {
+    font-size: 1.125rem;
+    color: #555;
+}
+
+.row {
+    justify-content: center;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+.contact-form-section h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #128f55; /* Your theme color */
+    text-align: center;
+}
+
+.form-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.form-container .form-group label {
+    color: #128f55; /* Your theme color */
+}
+
+.form-container .btn-primary {
+    background-color: #128f55; /* Your theme color */
+    border: none;
+}
+
+.form-container .btn-primary:hover {
+    background-color: #0d6e41; /* Darker shade of your theme color for hover effect */
+}
+
+/* Image Description Container */
+.image-description-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.additional-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.additional-images img {
+    width: 100%;
+    max-width: 49%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .event-planner-section h2, 
+    .contact-form-section h2 {
+        font-size: 2rem;
+    }
+
+    .box {
+        padding: 15px;
+    }
+
+    .box i {
+        font-size: 1.5rem;
+    }
+
+    .box h3 {
+        font-size: 1.5rem;
+    }
+
+    .box p {
+        font-size: 1rem;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    .additional-images img {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .event-planner-section h2, 
+    .contact-form-section h2 {
+        font-size: 1.75rem;
+    }
+
+    .box {
+        padding: 10px;
+    }
+
+    .box i {
+        font-size: 1.25rem;
+    }
+
+    .box h3 {
+        font-size: 1.25rem;
+    }
+
+    .box p {
+        font-size: 0.875rem;
+    }
+
+    .form-container {
+        padding: 15px;
+    }
+
+    .additional-images {
+        flex-direction: column;
+    }
+
+    .additional-images img {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+}
